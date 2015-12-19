@@ -37,3 +37,6 @@ autocmd BufReadPost *
 
 " Remap 0 to first non-blank character
 map 0 ^
+
+" Syntax highlighting
+syntax on

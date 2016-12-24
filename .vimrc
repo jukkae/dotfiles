@@ -40,3 +40,6 @@ map 0 ^
 
 " Syntax highlighting
 syntax on
+
+" Syntax for C++11 files
+au BufNewFile,BufRead *.cpp set syntax=cpp11

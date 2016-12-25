@@ -42,4 +42,4 @@ map 0 ^
 syntax on
 
 " Syntax for C++11 files
-au BufNewFile,BufRead *.cpp set syntax=cpp11
+au BufNewFile,BufRead *.cpp,*hpp set syntax=cpp11

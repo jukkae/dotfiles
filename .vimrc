@@ -45,6 +45,16 @@ inoremap <Down>  <NOP>
 inoremap <Left>  <NOP>
 inoremap <Right> <NOP>
 
+" Better split window navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-H> <C-W><C-H>
+nnoremap <C-L> <C-W><C-L>
+
+" Open splits to below and right
+set splitbelow
+set splitright
+
 " Set auto read when file changed from outside
 set autoread
 

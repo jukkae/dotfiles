@@ -43,3 +43,7 @@ syntax on
 
 " Syntax for C++11 files
 au BufNewFile,BufRead *.cpp,*hpp set syntax=cpp11
+
+" Local, project-specific vimrcs and secure
+set exrc
+set secure

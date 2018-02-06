@@ -84,6 +84,12 @@ alias please='sudo $(fc -ln -1)'
 export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
 alias gfop='git fetch origin --prune'
+alias gmnf='git merge --no-ff'
 
 # disable the awful beer mug for brew
 export HOMEBREW_NO_EMOJI=1
+
+# argh
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

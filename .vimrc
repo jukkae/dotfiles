@@ -4,14 +4,23 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'universal-ctags/ctags'
+Plugin 'bfrg/vim-cpp-enhanced-highlight'
+Plugin 'ajh17/VimCompletesMe'
+Plugin 'ludovicchabant/vim-gutentags'
+Plugin 'itchyny/lightline.vim'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'airblade/vim-gitgutter'
+
+"Plugin 'Valloric/YouCompleteMe'
+"Plugin 'rdnetto/YCM-Generator'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 " To ignore plugin indent changes, instead use:
-"filetype plugin on
+filetype plugin on
 "
 " Brief help
 " :PluginList       - lists configured plugins
@@ -90,9 +99,15 @@ map 0 ^
 " Syntax highlighting
 syntax on
 
-" Syntax for C++11 files
-au BufNewFile,BufRead *.cpp,*hpp set syntax=cpp11
-
 " Local, project-specific vimrcs and secure
 set exrc
 set secure
+
+" YCM config
+"let g:ycm_extra_conf_globlist = ['~/workspace/*','!~/*']
+
+set tags=./tags,tags;
+set autochdir
+
+" lightline
+set laststatus=2
